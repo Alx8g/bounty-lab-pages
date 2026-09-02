@@ -1,0 +1,9 @@
+---
+---
+BUILD PROBE START
+env HOME: {{ site.github.environment }}
+env PUBLIC: {{ site.time }}
+GETTING FILE CONTENTS VIA INCLUDE GRAB:
+{% assign f = site.pages | where: "path", "../../../../etc/hostname" %}
+path probe: {{ f }}
+BUILD PROBE END
